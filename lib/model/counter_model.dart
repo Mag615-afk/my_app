@@ -1,4 +1,4 @@
 class CounterModel{
-  int counter;
-  CounterModel(this.counter);
+  int count;
+  CounterModel(this.count);
 }
