@@ -13,7 +13,7 @@ Widget build(BuildContext context) {
     body: Center( 
       child: Column(
       children: <Widget>[
-        Text("contador:${counterViewModel.count}"),
+        Text("Contador:${counterViewModel.count}"),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -28,6 +28,11 @@ Widget build(BuildContext context) {
         },
         child:Icon(Icons.remove),
         ),
+            ElevatedButton(onPressed: (){
+           counterViewModel.reset();
+        }, 
+        child:const Text("Reseteo")), 
+
           ],
         )
         
