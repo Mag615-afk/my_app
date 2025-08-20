@@ -3,8 +3,7 @@ import 'package:flutter_application_3/viewmodel/counter_viewmodel.dart';
 import 'package:provider/provider.dart';
 
 class CounterViewTwo extends StatelessWidget {
-  const CounterViewTwo({Key? key}) : super(key: key); // Usamos 'super' para pasar 'key' al constructor base
-
+  const CounterViewTwo({Key? key}) : super(key: key); 
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
