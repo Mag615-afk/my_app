@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_3/viewmodel/counter_viewmodel.dart';
 import 'package:provider/provider.dart';
-class CounterView extends StatelessWidget {
-  const CounterView({super.key});
-
+class CounterViewTwo extends StatelessWidget {
+  const CounterViewTwo({super.key});
+ 
 @override
 Widget build(BuildContext context) {
   final counterViewModel = Provider.of<CounterViewModel>(context);
@@ -18,7 +18,7 @@ Widget build(BuildContext context) {
         mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Text(
-          "Contador de Motos:${counterViewModel.count}",
+          "Contador de Personas:${counterViewModel.count}",
            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 20,),
