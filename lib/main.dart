@@ -5,12 +5,7 @@ import 'package:flutter_application_3/view/screens/main_screen.dart';
 import 'package:flutter_application_3/view/counter_view.dart';
 import 'package:flutter_application_3/viewmodel/counter_viewmodel.dart';
 void main() {
-  runApp(
-    ChangeNotifierProvider(
-      create: (context) => CounterViewModel(), // Creamos nuestro ViewModel
-      child: const MyApp(),
-    ), // ChangeNotifierProvider
-  );
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
